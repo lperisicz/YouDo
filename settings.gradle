@@ -1,2 +1,5 @@
 rootProject.name='YouDo'
 include ':app'
+include ':data'
+include ':base'
+include ':auth'
