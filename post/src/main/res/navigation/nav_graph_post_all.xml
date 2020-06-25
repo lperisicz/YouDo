@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_post_all"
+    app:startDestination="@id/allPostsFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/allPostsFragment"
+        android:name="com.perisic.luka.post.ui.all.AllPostsFragment"
+        android:label="AllPostsFragment"
+        tools:layout="@layout/fragment_all_posts" />
+
+</navigation>

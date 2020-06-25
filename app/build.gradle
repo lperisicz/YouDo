@@ -40,6 +40,8 @@ dependencies {
     implementation project(':base')
     implementation project(':data')
     implementation project(':auth')
+    implementation project(':post')
+    implementation project(':user')
 
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$junitAndroidxVersion"
