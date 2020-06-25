@@ -3,4 +3,5 @@
     <string name="all_posts">All posts</string>
     <string name="my_posts">My posts</string>
     <string name="user">User</string>
+    <string name="login">Login</string>
 </resources>
