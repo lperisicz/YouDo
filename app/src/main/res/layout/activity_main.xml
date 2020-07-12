@@ -11,12 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".main.MainActivity">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbarMain"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme"/>
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/navHostFragment"
@@ -31,8 +32,9 @@
             android:id="@+id/bottomNavigationHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/menu_bottom_nav" />
+            app:labelVisibilityMode="selected"
+            app:menu="@menu/menu_bottom_nav"
+            android:theme="@style/AppTheme"/>
 
     </LinearLayout>
 
@@ -42,6 +44,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:menu="@menu/menu_bottom_nav" />
+        app:menu="@menu/menu_side_drawer"
+        android:theme="@style/AppTheme"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

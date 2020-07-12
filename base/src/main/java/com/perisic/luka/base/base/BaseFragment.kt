@@ -13,7 +13,7 @@ open class BaseFragment<T : ViewDataBinding> : Fragment() {
 
     @LayoutRes
     protected open val layoutId: Int = 0
-    private lateinit var binding: T
+    protected lateinit var binding: T
 
     override fun onCreateView(
         inflater: LayoutInflater,

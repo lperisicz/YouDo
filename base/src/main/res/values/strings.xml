@@ -2,6 +2,23 @@
     <string name="app_name">YouDo</string>
     <string name="all_posts">All posts</string>
     <string name="my_posts">My posts</string>
+    <string name="create_post">Create post</string>
     <string name="user">User</string>
     <string name="login">Login</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="distance">Distance</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="logout">Logout</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="location">Location</string>
+    <string name="price">Price</string>
+    <string name="full">Full</string>
+    <string name="per_hour">Per hour</string>
+    <string name="create">Create</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="unknown_contact">Unknown contact</string>
 </resources>

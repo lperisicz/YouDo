@@ -20,4 +20,20 @@ val LocalModule = module {
         get<LocalDatabase>().tokenDao()
     }
 
+    single {
+        get<LocalDatabase>().userDao()
+    }
+
+    single {
+        get<LocalDatabase>().contactDao()
+    }
+
+    single {
+        get<LocalDatabase>().taxonomyDao()
+    }
+
+    single {
+        get<LocalDatabase>().locationsDao()
+    }
+
 }

@@ -7,6 +7,8 @@ import com.perisic.luka.data.local.di.LocalModule
 import com.perisic.luka.data.remote.di.ApiModule
 import com.perisic.luka.data.remote.di.RemoteModule
 import com.perisic.luka.post.di.PostModule
+import com.perisic.luka.user.di.UserModule
+import com.perisic.luka.youdo.di.MainModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -23,7 +25,9 @@ class YouDo : Application() {
                     ApiModule,
                     RepoModule,
                     AuthModule,
-                    PostModule
+                    MainModule,
+                    PostModule,
+                    UserModule
                 )
             )
         }

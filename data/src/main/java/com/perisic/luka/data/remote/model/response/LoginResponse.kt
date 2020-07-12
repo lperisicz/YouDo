@@ -1,3 +1,6 @@
 package com.perisic.luka.data.remote.model.response
 
-class LoginResponse
+data class LoginResponse(
+    val token: String,
+    val refreshToken: String
+)

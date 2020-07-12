@@ -22,9 +22,9 @@ internal class TokenInterceptor(
     override fun intercept(chain: Interceptor.Chain): Response {
         var request = chain.request()
         request = request.newBuilder().apply {
-            /*token?.token?.let {
+            token?.accessToken?.let {
                 addHeader("Authorization", "Bearer $it")
-            }*/
+            }
         }.build()
         return chain.proceed(request)
     }

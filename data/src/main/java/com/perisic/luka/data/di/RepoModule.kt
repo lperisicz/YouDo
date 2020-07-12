@@ -1,22 +1,49 @@
 package com.perisic.luka.data.di
 
-import com.perisic.luka.data.repo.AuthRepository
-import com.perisic.luka.data.repo.AuthRepositoryImpl
-import com.perisic.luka.data.repo.PostRepository
-import com.perisic.luka.data.repo.PostRepositoryImpl
+import com.perisic.luka.data.repo.*
 import org.koin.dsl.module
 
 val RepoModule = module {
 
     single<AuthRepository> {
         AuthRepositoryImpl(
-            authService = get()
+            authService = get(),
+            tokenDao = get(),
+            localDatabase = get()
         )
     }
 
     single<PostRepository> {
         PostRepositoryImpl(
             postService = get()
+        )
+    }
+
+    single<UserRepository> {
+        UserRepositoryImpl(
+            userService = get(),
+            userDao = get(),
+            contactDao = get(),
+            taxonomyDao = get()
+        )
+    }
+
+    single<TaxonomyRepository> {
+        TaxonomyRepositoryImpl(
+            taxonomyService = get(),
+            taxonomyDao = get()
+        )
+    }
+
+    single<ContactRepository> {
+        ContactRepositoryImpl(
+            contactDao = get()
+        )
+    }
+
+    single<LocationRepository> {
+        LocationRepositoryImpl(
+            locationsDao = get()
         )
     }
 

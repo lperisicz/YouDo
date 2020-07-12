@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_graph_post_all"
+        android:icon="@drawable/ic_home"
+        android:orderInCategory="1"
+        android:title="@string/all_posts"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_graph_post_my"
+        android:icon="@drawable/ic_layers"
+        android:orderInCategory="2"
+        android:title="@string/my_posts"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_graph_user"
+        android:icon="@drawable/ic_account"
+        android:orderInCategory="3"
+        android:title="@string/user"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_exit"
+        android:orderInCategory="3"
+        android:title="@string/logout"
+        app:showAsAction="ifRoom" />
+
+</menu>

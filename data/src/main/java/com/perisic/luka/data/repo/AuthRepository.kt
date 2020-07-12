@@ -9,4 +9,6 @@ interface AuthRepository {
 
     fun login(request: LoginRequest): LiveData<BaseResponse<LoginResponse>>
 
+    fun logout()
+
 }

@@ -10,6 +10,25 @@
         android:id="@+id/allPostsFragment"
         android:name="com.perisic.luka.post.ui.all.AllPostsFragment"
         android:label="AllPostsFragment"
-        tools:layout="@layout/fragment_all_posts" />
+        tools:layout="@layout/fragment_all_posts">
+
+        <action
+            android:id="@+id/action_myPostsFragment_to_postDetailsFragment"
+            app:destination="@id/postDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/postDetailsFragment"
+        android:name="com.perisic.luka.post.ui.details.PostDetailsFragment"
+        android:label="PostDetailsFragment"
+        tools:layout="@layout/fragment_post_details">
+
+        <argument
+            android:name="post"
+            app:argType="com.perisic.luka.data.remote.model.response.PostResponse"
+            app:nullable="false" />
+
+    </fragment>
 
 </navigation>

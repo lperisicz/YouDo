@@ -8,7 +8,9 @@ val AuthModule = module {
 
     viewModel {
         LoginViewModel(
-            authRepository = get()
+            authRepository = get(),
+            userRepository = get(),
+            taxonomyRepository = get()
         )
     }
 

@@ -7,7 +7,7 @@ import retrofit2.Call
 
 class KeyedSourceFactory<D, T>(
     private val apiSource: (D?) -> Call<BaseResponse<List<T>>>,
-    private val getKeyFromData: (T) -> D
+    private val getKeyFromData: (T?) -> D
 ) : DataSource.Factory<D, T>() {
 
     private lateinit var latestSource: KeyedSource<D, T>
