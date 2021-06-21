@@ -26,7 +26,7 @@ buildscript {
         junitVersion = '4.13'
         junitAndroidxVersion = '1.1.1'
         espressoVersion = '3.2.0'
-        baseUrlDev = 'https://youdo-api-nnf4y3l2va-ew.a.run.app/api/'
+        baseUrlDev = 'https://youdo-api-2-master-cvhvarhc6q-ew.a.run.app/api/'
     }
     repositories {
         google()
